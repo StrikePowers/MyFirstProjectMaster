@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyFirstProject.ViewViewModel.Layouts
+namespace MyFirstProject.ViewViewModel.Layouts.AbsoluteLayout
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LayoutMenuView : ContentPage
+    public partial class AbsoluteLayoutView : ContentPage
     {
-        public LayoutMenuView()
+        public AbsoluteLayoutView()
         {
             InitializeComponent();
-            BindingContext = new LayoutMenuViewModel();
         }
     }
 }
