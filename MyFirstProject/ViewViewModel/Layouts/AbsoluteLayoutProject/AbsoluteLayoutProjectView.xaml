@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Layouts.AbsoluteLayoutProject.AbsoluteLayoutProjectView"
+             Title = "{Binding Title}">
+
+    <AbsoluteLayout>
+
+        <Label Text="06"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Yellow"
+                     AbsoluteLayout.LayoutBounds="0.35,130,98,45"
+                     AbsoluteLayout.LayoutFlags="XProportional" />
+        <Label Text="10"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="OrangeRed"
+                     AbsoluteLayout.LayoutBounds="0.35,195,98,45"
+                     AbsoluteLayout.LayoutFlags="XProportional" />
+        <Label Text="02"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Gray"
+                     AbsoluteLayout.LayoutBounds="0.35,65,98,45"
+                     AbsoluteLayout.LayoutFlags="XProportional" />
+        <Label Text="05"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="DarkOrchid"
+                     AbsoluteLayout.LayoutBounds="9,0.2,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="09"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="MediumPurple"
+                     AbsoluteLayout.LayoutBounds="10,0.3,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="01"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="ForestGreen"
+                     AbsoluteLayout.LayoutBounds="10,0.1,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="03"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Chocolate"
+                     AbsoluteLayout.LayoutBounds="210,0.1,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="07"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Pink"
+                     AbsoluteLayout.LayoutBounds="210,0.2,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="11"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="LightSalmon"
+                     AbsoluteLayout.LayoutBounds="210,0.3,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="04"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="Brown"
+                     AbsoluteLayout.LayoutBounds="310,0.1,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="08"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="RosyBrown"
+                     AbsoluteLayout.LayoutBounds="310,0.2,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+        <Label Text="12"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="PaleGreen"
+                     AbsoluteLayout.LayoutBounds="310,0.3,98,45"
+                 AbsoluteLayout.LayoutFlags="YProportional" />
+
+
+    </AbsoluteLayout>
+
+</ContentPage>

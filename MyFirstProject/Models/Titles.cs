@@ -8,17 +8,22 @@ namespace MyFirstProject.Models
     {
         public static string MainPageTitle = "Main Page";
         public static string MainPageSubtitle = "Mobile App";
-        //Controls
-        public static string LayoutTitle = "Layout Page";
 
-        //Image
+        //Controls
         public static string ControlsTitle = "Controls Page";
 
+        //Image
+        public static string ImageTitle = "Image Page";
+
         //Layouts
-        public static string ListViewTitle = "ListView Page";
+        public static string LayoutTitle = "Layout Page";
+        public static string AbsoluteTitle = "Absolute Page";
+        public static string RelativeTitle = "Relative Page";
+        public static string AbsoluteProjectTitle = "Absolute Project Page";
+        public static string RelativeProjectTitle = "Absolute Project Page";
 
         //ListView
-        public static string ImageTitle = "Image Page";
+        public static string ListViewTitle = "ListView Page";
 
 
 

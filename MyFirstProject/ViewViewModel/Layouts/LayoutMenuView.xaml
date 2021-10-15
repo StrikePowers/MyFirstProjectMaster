@@ -8,10 +8,22 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             
-            <Button Grid.Row="1"
-               Grid.Column="1"
+            <Button 
                 Text="Absolute" 
                Command="{Binding OnAbsoluteClicked}" />
+
+            <Button 
+                Text="Relative" 
+               Command="{Binding OnRelativeClicked}" />
+            
+            <Button 
+                Text="AbsoluteProject" 
+               Command="{Binding OnAbsoluteProjectClicked}" />
+
+            <Button 
+                Text="RelativeProject" 
+               Command="{Binding OnRelativeProjectClicked}" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

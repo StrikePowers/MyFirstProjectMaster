@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Layouts.RelativeLayoutProject.RelativeLayoutProjectView"
+             Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <RelativeLayout>
+
+            <BoxView Color="LimeGreen"
+                HeightRequest="100000"
+                WidthRequest="100000"
+            />
+
+            <Label Text="Relative!"
+               FontSize="20"
+               FontAttributes="Bold"
+               TranslationX="160"
+               TranslationY="15"
+               />
+
+            <BoxView Color="Blue"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=250}" />
+            
+            <BoxView Color="Orange"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=400}" />
+            
+            <BoxView Color="Pink"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=250}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=400}" />
+            
+            <BoxView Color="RosyBrown"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=250}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=250}" />
+
+            <BoxView Color="White"
+                 Scale=".5"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=250}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=400}" />
+
+
+
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
