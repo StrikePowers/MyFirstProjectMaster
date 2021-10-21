@@ -1,4 +1,5 @@
-﻿using MyFirstProject.ViewViewModel.Layouts.AbsoluteLayout;
+﻿using MyFirstProject.Models;
+using MyFirstProject.ViewViewModel.Layouts.AbsoluteLayout;
 using MyFirstProject.ViewViewModel.Layouts.AbsoluteLayoutProject;
 using MyFirstProject.ViewViewModel.Layouts.RelativeLayout;
 using MyFirstProject.ViewViewModel.Layouts.RelativeLayoutProject;
@@ -24,6 +25,7 @@ namespace MyFirstProject.ViewViewModel.Layouts
 
         public LayoutMenuViewModel()
         {
+            Title = Titles.LayoutTitle;
             OnAbsoluteClicked = new Command(OnAbsoluteClickedAsync);
             OnRelativeClicked = new Command(OnRelativeClickedAsync);
             OnAbsoluteProjectClicked = new Command(OnAbsoluteProjectClickedAsync);

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Image.ImageMenuView"
+             Title="{Binding Title}" >
+    
+        <StackLayout>
+                        
+            <Button
+               FontAttributes="Bold"
+               BackgroundColor="MediumPurple"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Embedded Image"
+               Command="{Binding OnEmbeddedImagesClicked}" />
+
+        <Button
+               FontAttributes="Bold"
+               BackgroundColor="IndianRed"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Embedded Image Project"
+               Command="{Binding OnEmbeddedImagesProjectClicked}" />
+
+    </StackLayout>
+</ContentPage>

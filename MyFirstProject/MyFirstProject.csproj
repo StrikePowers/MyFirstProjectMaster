@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Nissan.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Nissan.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
@@ -19,7 +27,13 @@
     <EmbeddedResource Update="ViewViewModel\Controls\ControlsMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ViewViewModel\Image\ImageMenuView.xaml">
+    <EmbeddedResource Update="ViewViewModel\Images\EmbeddedImagesViewProject\EmbeddedImagesViewProject.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Images\EmbeddedImagesView\EmbeddedImagesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Images\ImagesMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\Layouts\AbsoluteLayoutProject\AbsoluteLayoutProjectView.xaml">
@@ -40,5 +54,11 @@
     <EmbeddedResource Update="ViewViewModel\ListView\ListViewMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ViewViewModel\Images\ImagesMenuView.xaml.cs">
+      <DependentUpon>ImagesMenuView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

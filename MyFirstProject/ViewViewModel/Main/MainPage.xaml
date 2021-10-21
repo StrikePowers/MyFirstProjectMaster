@@ -8,7 +8,8 @@
 
         <Frame BackgroundColor="#2196F3"
                Padding="1"
-               CornerRadius="0">
+               CornerRadius="0"
+               BorderColor="Black">
 
             <Label Text="{Binding Subtitle}"
                    HorizontalTextAlignment="Center"
@@ -30,20 +31,39 @@
 
             <Button Grid.Row="0"
                Grid.Column="0"
-                Text="layout" 
+               FontAttributes="Bold"
+               BackgroundColor="PaleVioletRed"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="layout" 
                Command="{Binding OnLayoutsMenuClicked}" />
+            
             <Button Grid.Row="0"
                Grid.Column="1"
-                Text="Image"
+               FontAttributes="Bold"
+               BackgroundColor="OrangeRed"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Image"
                Command="{Binding OnImageMenuClicked}" />     
+            
             <Button Grid.Row="1"
+               FontAttributes="Bold"
+               BackgroundColor="CadetBlue"
+               BorderColor="Black"
+               BorderWidth="5"
                Grid.Column="0"
-                Text="Lists"
-                Command="{Binding OnListsViewMenuClicked}" />    
+               Text="Lists"
+               Command="{Binding OnListsViewMenuClicked}" /> 
+            
             <Button Grid.Row="1"
+               FontAttributes="Bold"
+               BackgroundColor="MediumPurple"
+               BorderColor="Black"
+               BorderWidth="5"
                Grid.Column="1"
-                Text="Controls"
-                 Command="{Binding OnControlsMenuClicked}" /> 
+               Text="Controls"
+               Command="{Binding OnControlsMenuClicked}" /> 
 
         </Grid>
     </StackLayout>

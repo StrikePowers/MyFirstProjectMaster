@@ -15,6 +15,7 @@ namespace MyFirstProject.ViewViewModel.Image
         public ImageMenuView()
         {
             InitializeComponent();
+            BindingContext = new ImagesMenuViewModel();
         }
     }
 }

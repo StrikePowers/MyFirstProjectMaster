@@ -1,29 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstProject.ViewViewModel.Layouts.LayoutMenuView">
+             x:Class="MyFirstProject.ViewViewModel.Layouts.LayoutMenuView"
+             Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Grid Margin='20,35,20,20' >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Button 
+               Text="Absolute" 
+               FontAttributes="Bold"
+               BackgroundColor="PaleVioletRed"
+               BorderColor="Black"
+               BorderWidth="5"
+               Grid.Row="0"
+               Grid.Column="0"
+               Command="{Binding OnAbsoluteClicked}"  />
+
+            <Button 
+               Text="Relative" 
+               FontAttributes="Bold"
+               BackgroundColor="Chocolate"
+               BorderColor="Black"
+               Command="{Binding OnRelativeClicked}" 
+               Grid.Row="0"
+               Grid.Column="1"
+               BorderWidth="5"/>
             
             <Button 
-                Text="Absolute" 
-               Command="{Binding OnAbsoluteClicked}" />
+               Text="AbsoluteProject" 
+               FontAttributes="Bold"
+               BackgroundColor="LightGreen"
+               BorderColor="Black"
+               Grid.Row="1"
+               Grid.Column="0"
+               Command="{Binding OnAbsoluteProjectClicked}"
+               BorderWidth="5"/>
+                
 
             <Button 
-                Text="Relative" 
-               Command="{Binding OnRelativeClicked}" />
-            
-            <Button 
-                Text="AbsoluteProject" 
-               Command="{Binding OnAbsoluteProjectClicked}" />
-
-            <Button 
-                Text="RelativeProject" 
-               Command="{Binding OnRelativeProjectClicked}" />
-
+               Text="RelativeProject" 
+               FontAttributes="Bold"
+               BackgroundColor="DeepSkyBlue"
+               BorderColor="Black"
+               Grid.Row="1"
+               Grid.Column="1"
+               Command="{Binding OnRelativeProjectClicked}"
+               BorderWidth="5"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
