@@ -21,6 +21,22 @@
                BorderWidth="5"
                Text="Embedded Image Project"
                Command="{Binding OnEmbeddedImagesProjectClicked}" />
+            
+        <Button
+               FontAttributes="Bold"
+               BackgroundColor="LightSeaGreen"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Url Image"
+               Command="{Binding OnUrlImagesClicked}" />
+
+        <Button
+               FontAttributes="Bold"
+               BackgroundColor="LightYellow"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Url Image Project"
+               Command="{Binding OnUrlImagesProjectClicked}" />
 
     </StackLayout>
 </ContentPage>

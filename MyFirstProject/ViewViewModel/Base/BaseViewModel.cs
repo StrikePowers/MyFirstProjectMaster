@@ -26,13 +26,6 @@ namespace MyFirstProject.ViewViewModels
             set { SetProperty(ref title, value); }
         }
 
-        string image = string.Empty;
-
-        public string Image
-        {
-            get { return image;}
-            set { SetProperty(ref image, value); }
-        }
 
         string subtitle = string.Empty;
 

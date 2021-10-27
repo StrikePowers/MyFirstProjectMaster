@@ -16,6 +16,8 @@ namespace MyFirstProject.Models
         public static string ImageTitle = "Image Page";
         public static string EmbeddedImageTitle = "Embedded Image Page";
         public static string EmbeddedImagesProjectTitle = "Embedded Image Project Page";
+        public static string UrlImageTitle = "Url Image Page";
+        public static string UrlImagesProjectTitle = "Url Project Image Page";
 
         //Layouts
         public static string LayoutTitle = "Layout Page";

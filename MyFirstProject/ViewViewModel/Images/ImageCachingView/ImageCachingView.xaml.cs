@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyFirstProject.ViewViewModel.Images.EmbeddedImagesViewProject
+namespace MyFirstProject.ViewViewModel.Images.ImageCachingView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EmbeddedImagesViewProject : ContentPage
+    public partial class ImageCachingView : ContentPage
     {
-        public EmbeddedImagesViewProject()
+        public ImageCachingView()
         {
             InitializeComponent();
-            BindingContext = new EmbeddedImagesViewProjectViewModel();
         }
     }
 }

@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyFirstProject.ViewViewModel.Images.EmbeddedImagesViewProject
+namespace MyFirstProject.ViewViewModel.Images.UrlImageViewProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EmbeddedImagesViewProject : ContentPage
+    public partial class UrlImagesViewProjectView : ContentPage
     {
-        public EmbeddedImagesViewProject()
+        public UrlImagesViewProjectView()
         {
             InitializeComponent();
-            BindingContext = new EmbeddedImagesViewProjectViewModel();
+            BindingContext = new UrlImagesViewProjectViewModel();
         }
     }
 }
