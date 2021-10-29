@@ -5,7 +5,8 @@
              Title="{Binding Title}">
     
     <StackLayout>
-        <Image Source="{Binding EmbeddedImageSrc}" />
+        <Image Source="{Binding EmbeddedImageSrc}" 
+               Aspect="AspectFill"/>
     </StackLayout>
 
 </ContentPage>

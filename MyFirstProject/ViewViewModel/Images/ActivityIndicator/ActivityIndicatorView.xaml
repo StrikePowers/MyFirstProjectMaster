@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstProject.ViewViewModel.Images.ImageCachingView.ImageCachingView"
+             x:Class="MyFirstProject.ViewViewModel.Images.ActivityIndicator.ActivityIndicatorView"
              Title="{Binding Title}">
-            
-            <Image Source="{Binding ImageSrc}"
-                   Aspect="AspectFill"/>
+             
+             
+             <Image Source="{Binding ImageSrc}"
+                 Aspect="AspectFill"/>
 
 </ContentPage>

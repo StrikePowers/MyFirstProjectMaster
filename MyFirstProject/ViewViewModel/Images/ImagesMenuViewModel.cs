@@ -6,6 +6,8 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using MyFirstProject.ViewViewModel.Images.UrlImagesView;
 using MyFirstProject.ViewViewModel.Images.UrlImageViewProject;
+using MyFirstProject.ViewViewModel.Images.ImageCachingView;
+using MyFirstProject.ViewViewModel.Images.ActivityIndicator;
 
 namespace MyFirstProject.ViewViewModel.Image
 {
@@ -16,7 +18,8 @@ namespace MyFirstProject.ViewViewModel.Image
             public ICommand OnEmbeddedImagesProjectClicked { get; set; }
             public ICommand OnUrlImagesClicked { get; set; }
             public ICommand OnUrlImagesProjectClicked { get; set; }
-
+            public ICommand OnImageCachingClicked { get; set; }
+            public ICommand OnActivityImageClicked { get; set; }
 
         public ImagesMenuViewModel()
             {
@@ -26,6 +29,8 @@ namespace MyFirstProject.ViewViewModel.Image
                 OnEmbeddedImagesProjectClicked = new Command(OnEmbeddedImagesProjectClickedAsync);
                 OnUrlImagesClicked = new Command(OnOnUrlImagesClickedAsync);
                 OnUrlImagesProjectClicked = new Command(OnOnUrlImagesProjectClickedAsync);
+                OnImageCachingClicked = new Command(OnImageCachingClickedAsync);
+                OnActivityImageClicked = new Command(OnActivityImageClickedAsync);
 
         }
             private async void OnEmbeddedImagesClickedAsync(object obj)
@@ -45,9 +50,19 @@ namespace MyFirstProject.ViewViewModel.Image
             
             private async void OnOnUrlImagesProjectClickedAsync(object obj)
             {
-            await Application.Current.MainPage.Navigation.PushAsync(new UrlImagesViewProjectView());
+               await Application.Current.MainPage.Navigation.PushAsync(new UrlImagesViewProjectView());
+            }
+            private async void OnImageCachingClickedAsync(object obj)
+            {
+               await Application.Current.MainPage.Navigation.PushAsync(new ImageCachingView());
             }
 
+            private async void OnActivityImageClickedAsync(object obj)
+            {
+              await Application.Current.MainPage.Navigation.PushAsync(new ActivityIndicatorView());
+            }
+
+
     }
-    
+
 }

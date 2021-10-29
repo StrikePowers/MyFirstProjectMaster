@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace MyFirstProject.ViewViewModel.Images.ImageCachingView
+namespace MyFirstProject.ViewViewModel.Images.ActivityIndicator
 {
-    public class ImageCachingViewModel : BaseViewModel
+    public class ActivityIndicatorViewModel : BaseViewModel
     {
 
         public ImageSource ImageSrc { get; set; }
-        public ImageCachingViewModel()
+        public ActivityIndicatorViewModel()
         {
-            Title = Titles.ImageCachingTitle;
+            Title = Titles.ActivityImageTitle;
             ImageSrc = this.SetImgSrc();
         }
 

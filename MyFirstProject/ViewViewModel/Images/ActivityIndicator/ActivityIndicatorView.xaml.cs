@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyFirstProject.ViewViewModel.Images.ImageCachingView
+namespace MyFirstProject.ViewViewModel.Images.ActivityIndicator
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ImageCachingView : ContentPage
+    public partial class ActivityIndicatorView : ContentPage
     {
-        public ImageCachingView()
+        public ActivityIndicatorView()
         {
             InitializeComponent();
-            BindingContext = new ImageCachingViewModel();
+            BindingContext = new ActivityIndicatorViewModel();
         }
     }
 }

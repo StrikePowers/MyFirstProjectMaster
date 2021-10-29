@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstProject.ViewViewModel.Images.UrlImageViewProject.UrlImagesViewProjectView"
              Title="{Binding Title}">
-    
+
     <Image Source="{Binding Image}"/>
 
 

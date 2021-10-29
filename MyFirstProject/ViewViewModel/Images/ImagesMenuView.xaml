@@ -8,7 +8,7 @@
                         
             <Button
                FontAttributes="Bold"
-               BackgroundColor="MediumPurple"
+               BackgroundColor="Purple"
                BorderColor="Black"
                BorderWidth="5"
                Text="Embedded Image"
@@ -16,7 +16,7 @@
 
         <Button
                FontAttributes="Bold"
-               BackgroundColor="IndianRed"
+               BackgroundColor="Red"
                BorderColor="Black"
                BorderWidth="5"
                Text="Embedded Image Project"
@@ -24,7 +24,7 @@
             
         <Button
                FontAttributes="Bold"
-               BackgroundColor="LightSeaGreen"
+               BackgroundColor="CornflowerBlue"
                BorderColor="Black"
                BorderWidth="5"
                Text="Url Image"
@@ -37,6 +37,22 @@
                BorderWidth="5"
                Text="Url Image Project"
                Command="{Binding OnUrlImagesProjectClicked}" />
+
+        <Button
+               FontAttributes="Bold"
+               BackgroundColor="Green"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Image Caching"
+               Command="{Binding OnImageCachingClicked}" />
+            
+        <Button
+               FontAttributes="Bold"
+               BackgroundColor="Orange"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="Activity Indicator View"
+               Command="{Binding OnActivityImageClicked}" />
 
     </StackLayout>
 </ContentPage>
