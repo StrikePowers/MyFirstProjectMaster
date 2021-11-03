@@ -4,7 +4,6 @@
              x:Class="MyFirstProject.ViewViewModel.Images.ActivityIndicator.ActivityIndicatorView"
              Title="{Binding Title}">
              
-             
              <Image Source="{Binding ImageSrc}"
                  Aspect="AspectFill"/>
 
