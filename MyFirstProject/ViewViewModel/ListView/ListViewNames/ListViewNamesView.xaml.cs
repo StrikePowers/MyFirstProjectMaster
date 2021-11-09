@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyFirstProject.ViewViewModel.ListView
+namespace MyFirstProject.ViewViewModel.ListView.ListViewNames
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ListViewMenuView : ContentPage
+    public partial class ListViewNamesView : ContentPage
     {
-        public ListViewMenuView()
+        public ListViewNamesView()
         {
             InitializeComponent();
-            BindingContext = new ListViewMenuViewModel();
         }
     }
 }
