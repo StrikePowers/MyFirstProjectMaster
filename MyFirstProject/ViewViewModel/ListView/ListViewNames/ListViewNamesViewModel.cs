@@ -12,7 +12,7 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewNames
     {
         public ObservableCollection<Person> Persons { get; }
 
-        private List<Person> _person;
+        private List<Person> _person; 
 
         public ListViewNamesViewModel()
         {
