@@ -13,7 +13,7 @@ namespace MyFirstProject.Models
             Name = n;
         }
 
-        public static List<Person> GETNAME()
+        public static List<Person> GetName()
         {
             return new List<Person>
             {

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MyFirstProject.ViewViewModels.Lists"
              xmlns:model="clr-namespace:MyFirstProject.Models"
-             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewNames.ListViewNamesView">
+             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewNames.ListViewNamesView"
+             Title="{Binding Title}">
 
     <CollectionView x:Name="ItemsListView"
                     ItemsSource="{Binding Persons}"
@@ -16,22 +16,22 @@
 
                 <Grid Padding="10" Margin="12">
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.5"/>
-                </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5"/>
+                    </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-                <StackLayout Padding="10" x:DataType="model:Person">
-                    <Label Text="{Binding Name}"
-                        Grid.Column="0"
-                        Grid.Row="0"
-                        LineBreakMode="NoWrap"
-                        FontSize="16"
-                        FontAttributes="Bold"/>
-                </StackLayout>
+                    <StackLayout Padding="10" x:DataType="model:Person">
+                        <Label Text="{Binding Name}"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            LineBreakMode="NoWrap"
+                            FontSize="16"
+                            FontAttributes="Bold"/>
+                    </StackLayout>
                 
                  </Grid>
 

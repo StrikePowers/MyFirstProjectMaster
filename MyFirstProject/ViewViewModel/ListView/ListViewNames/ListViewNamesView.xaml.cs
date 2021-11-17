@@ -15,6 +15,7 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewNames
         public ListViewNamesView()
         {
             InitializeComponent();
+            BindingContext = new ListViewNamesViewModel();
         }
     }
 }
