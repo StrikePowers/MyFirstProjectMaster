@@ -6,7 +6,7 @@ namespace MyFirstProject.Models
 {
     public class PersonImage
     {
-        public string Name { get; set; }
+        public string Name { get; set; } 
         public string Images { get; set; }
         public string Roles { get; set; }
 
