@@ -2,22 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:MyFirstProject.Models" 
-             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewNames.ListViewNamesView"
+             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewImages.ListViewImagesView"
              Title="{Binding Title}">
 
     <StackLayout>
         <StackLayout HorizontalOptions="CenterAndExpand">
-            <Label Text="Gaurdian of The Galaxy Cast"
-            FontSize="24"
+            <Label Text="Gaurdian of The Galaxy Cast Image View"
+            FontSize="16"
             TextColor="CadetBlue"
             FontAttributes="Bold,Italic"/>
         </StackLayout>
 
         <CollectionView x:Name="ItemsListView"
-                    ItemsSource="{Binding Persons}"
+                    ItemsSource="{Binding Movies}"
                     SelectionMode="None"
                     ItemsLayout="VerticalList">
-
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -25,20 +24,20 @@
                     <Grid Padding="10" Margin="12">
 
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="0.5"/>
+                            <RowDefinition Height="0.5*"/>
                         </Grid.RowDefinitions>
 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="390"/>
                         </Grid.ColumnDefinitions>
 
-                        <StackLayout HorizontalOptions="FillAndExpand">
-                            <BoxView Grid.Row="0"
-                                     Grid.Column="0"
-                                     Color="DarkOrchid"/>
+                        <StackLayout Padding="10" x:DataType="model:PersonImage">
+                            <Image Source="{Binding Images}"
+                            Grid.Column="0"
+                            Grid.Row="0"/>
                         </StackLayout>
-
-                        <StackLayout Padding="10" x:DataType="model:Person">
+                        
+                        <StackLayout Padding="10" x:DataType="model:PersonImage">
                             <Label Text="{Binding Name}"
                             Grid.Column="0"
                             Grid.Row="0"
@@ -55,4 +54,7 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
     </StackLayout>
+    
+    
+    
 </ContentPage>
