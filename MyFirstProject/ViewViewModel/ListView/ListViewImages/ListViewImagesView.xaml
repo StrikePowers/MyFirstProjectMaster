@@ -21,33 +21,41 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
 
-                    <Grid Padding="10" Margin="12">
+                    <Grid Padding="7">
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.5*"/>
                         </Grid.RowDefinitions>
 
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="390"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
                         </Grid.ColumnDefinitions>
 
-                        <StackLayout Padding="10" x:DataType="model:PersonImage">
+                        <StackLayout x:DataType="model:PersonImage">
                             <Image Source="{Binding Images}"
-                            Grid.Column="0"
-                            Grid.Row="0"/>
-                        </StackLayout>
-                        
-                        <StackLayout Padding="10" x:DataType="model:PersonImage">
-                            <Label Text="{Binding Name}"
-                            Grid.Column="0"
-                            Grid.Row="0"
-                            LineBreakMode="NoWrap"
-                            FontSize="16"
-                            TextColor="Black"
-                            TextDecorations="Underline"
-                            FontAttributes="Bold"/>
+                                   Grid.Column="0"
+                                   Grid.Row="0"/>
                         </StackLayout>
 
+                        <StackLayout x:DataType="model:PersonImage" Grid.Column="1">
+                            
+                            <Label Text="{Binding Name}"
+                                   LineBreakMode="NoWrap"
+                                   FontSize="16"
+                                   TextColor="Black"
+                                   TextDecorations="Underline"
+                                   FontAttributes="Bold"/>
+
+                            <Label Text="{Binding Roles}"
+                                   LineBreakMode="NoWrap"
+                                   FontSize="16"
+                                   TextColor="Black"
+                                   TextDecorations="Underline"
+                                   FontAttributes="Bold"/>
+                            
+                        </StackLayout>
+                        
                     </Grid>
 
                 </DataTemplate>

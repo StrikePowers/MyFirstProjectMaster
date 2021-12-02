@@ -16,10 +16,10 @@
 
         <Button
                FontAttributes="Bold"
-               BackgroundColor="Gold"
+               BackgroundColor="LawnGreen"
                BorderColor="Black"
                BorderWidth="5"
-               Text="List Names View"
+               Text="List Images View"
                Command="{Binding OnListImagesClicked}" />
 
     </StackLayout>
