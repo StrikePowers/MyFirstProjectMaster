@@ -6,31 +6,36 @@
              Title="{Binding Title}">
 
     <StackLayout>
+        
+        
+        
         <StackLayout HorizontalOptions="CenterAndExpand">
             <Label Text="Gaurdian of The Galaxy Cast"
             FontSize="24"
             TextColor="CadetBlue"
             FontAttributes="Bold,Italic"/>
         </StackLayout>
+        <Frame HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Black"/>
+        <StackLayout>
+            
+           <CollectionView x:Name="ItemsListView"
+                     ItemsSource="{Binding Persons}"
+                     SelectionMode="None"
+                     ItemsLayout="VerticalList">
 
-        <CollectionView x:Name="ItemsListView"
-                    ItemsSource="{Binding Persons}"
-                    SelectionMode="None"
-                    ItemsLayout="VerticalList">
+            
+               <CollectionView.ItemTemplate>
+                   <DataTemplate>
 
+                      <Grid Padding="10" Margin="12">
 
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
+                          <Grid.RowDefinitions>
+                              <RowDefinition Height="0.5"/>
+                          </Grid.RowDefinitions>
 
-                    <Grid Padding="10" Margin="12">
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="0.5"/>
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.5*"/>
-                        </Grid.ColumnDefinitions>
+                           <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="0.5*"/>
+                          </Grid.ColumnDefinitions>
 
                         <StackLayout HorizontalOptions="FillAndExpand">
                             <BoxView Grid.Row="0"
@@ -47,6 +52,8 @@
                             TextColor="Black"
                             TextDecorations="Underline"
                             FontAttributes="Bold"/>
+
+
                         </StackLayout>
 
                     </Grid>
@@ -54,5 +61,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        </StackLayout> 
     </StackLayout>
 </ContentPage>

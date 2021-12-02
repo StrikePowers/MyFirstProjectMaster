@@ -13,11 +13,8 @@
                        FontSize="16"
                        TextColor="CadetBlue"
                        FontAttributes="Bold,Italic"/>
-            
-            </StackLayout>
-            
-            <Frame HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Black"/>
 
+            </StackLayout>
         </StackLayout>
 
         <CollectionView x:Name="ItemsListView"
@@ -31,17 +28,17 @@
                     <StackLayout>
                         <Grid Padding="5.5">
 
-                            
+
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            
+
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="0.5*"/>
                                 <ColumnDefinition Width="0.25*"/>
                                 <ColumnDefinition Width="0.25*"/>
                             </Grid.ColumnDefinitions>
-                            
+
                             <StackLayout x:DataType="model:ItemButton" Grid.Column="0">
                                 <Label Text="{Binding Name}" />
                             </StackLayout>
@@ -54,16 +51,16 @@
                                        FontAttributes="Bold" />
 
                             </StackLayout>
-                            
+
                             <StackLayout Grid.Column="2">
 
-                                    <Button Text="Delete"
+                                <Button Text="Delete"
                                        FontSize="16"
                                        TextColor="Black"   
                                        FontAttributes="Bold"/>
 
                             </StackLayout>
-                            
+
                         </Grid>
 
                         <Frame HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Black"/>
@@ -73,7 +70,4 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
     </StackLayout>
-
-
-
 </ContentPage>
