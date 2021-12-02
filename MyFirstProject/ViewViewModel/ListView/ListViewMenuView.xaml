@@ -21,6 +21,13 @@
                BorderWidth="5"
                Text="List Images View"
                Command="{Binding OnListImagesClicked}" />
+        <Button
+               FontAttributes="Bold"
+               BackgroundColor="Silver"
+               BorderColor="Black"
+               BorderWidth="5"
+               Text="List Images View"
+               Command="{Binding OnListButtonsClicked}" />
 
     </StackLayout>
 

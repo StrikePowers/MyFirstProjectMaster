@@ -21,7 +21,7 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
 
-                    <Grid Padding="7">
+                    <Grid Padding="5.5">
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="0.5*"/>
@@ -34,7 +34,7 @@
 
                         <StackLayout x:DataType="model:PersonImage">
                             <Image Source="{Binding Images}"
-                                   Grid.Column="0"
+                                   Grid.Column="0"                        
                                    Grid.Row="0"/>
                         </StackLayout>
 

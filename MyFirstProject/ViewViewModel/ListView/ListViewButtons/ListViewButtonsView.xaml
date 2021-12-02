@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MyFirstProject.Models" 
+             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewButtons.ListViewButtonsView"
+             Title="{Binding Title}">
+
+    <StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="Center">
+
+                <Label Text="List Buttons View"
+                       FontSize="16"
+                       TextColor="CadetBlue"
+                       FontAttributes="Bold,Italic"/>
+            
+            </StackLayout>
+            
+            <Frame HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Black"/>
+
+        </StackLayout>
+
+        <CollectionView x:Name="ItemsListView"
+                        ItemsSource="{Binding Movies}"
+                        SelectionMode="None"
+                        ItemsLayout="VerticalList">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout>
+                        <Grid Padding="5.5">
+
+                            
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="0.25*"/>
+                                <ColumnDefinition Width="0.25*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackLayout x:DataType="model:ItemButton" Grid.Column="0">
+                                <Label Text="{Binding Name}" />
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1">
+
+                                <Button Text="Update"
+                                       FontSize="16"
+                                       TextColor="Black"   
+                                       FontAttributes="Bold" />
+
+                            </StackLayout>
+                            
+                            <StackLayout Grid.Column="2">
+
+                                    <Button Text="Delete"
+                                       FontSize="16"
+                                       TextColor="Black"   
+                                       FontAttributes="Bold"/>
+
+                            </StackLayout>
+                            
+                        </Grid>
+
+                        <Frame HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand" BackgroundColor="Black"/>
+
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+
+
+</ContentPage>
